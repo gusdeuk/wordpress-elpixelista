@@ -1,0 +1,362 @@
+/*! SPLASH CSS BY NWRK GUS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* SPLASH */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    background-color: #224780;
+    font-family: "FattenLight";
+}
+.blinking-star-link {
+    cursor: pointer;
+}
+// --------------------------------------------------------------------------------
+// set portrait stuff
+// --------------------------------------------------------------------------------
+
+@media only screen and (max-device-width: 640px) and (orientation: landscape) {
+    .mobile {
+        .splash-container {
+            .mid-block {
+                bottom: 50px;
+                .logo-wrap {
+                    top: 30px;
+                    left: 30px;
+                    .logo {
+                        width: 200px;
+                    }
+                }
+                .nav-wrap {
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    .nav-item {
+                        margin: 0 0 0 15px;
+                        transform: scale(0.8);
+                        width: auto;
+                    }
+                }
+            }
+
+            .bottom-block {
+                height: 50px;
+                .friend {
+                    position: absolute;
+                    bottom: 6px;
+                    right: 5px;
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+// --------------------------------------------------------------------------------
+// content
+// --------------------------------------------------------------------------------
+.splash-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .top-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        .stars {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 300px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .stars-mini {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 70px;
+            display: none;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .mid-block {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        pointer-events: none;
+
+        .logo-wrap {
+            position: absolute;
+            display: flex;
+            z-index: 10;
+            bottom: 52px;
+            pointer-events: none;
+            left: 56px;
+            align-items: center;
+            // ioculto
+            // display: none!important;
+
+            .logo {
+                width: 690px;
+                // height: 135px;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .nav-wrap {
+            background-color: #1b365e;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 43px;
+            pointer-events: all;
+
+            .nav-item {
+                border-left: solid 8px #00a3d8;
+                margin: 20px;
+                width: 230px;
+                padding: 0px 0px 14px 25px;
+                transition: all 0.4s ease;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .item-title {
+                    font-size: 65px;
+                    line-height: 1;
+                    text-align: left;
+                    color: #fff !important;
+                }
+                .item-caption {
+                    font-size: 40px;
+                    line-height: 1;
+                    text-align: left;
+                    color: #99c94e !important;
+                }
+
+                &:hover {
+                    background-color: #132d54;
+                    margin: 0 40px;
+                    transform: scale(1.5);
+                    border-left-color: #99c94e;
+                    z-index: 100;
+                }
+            }
+        }
+    }
+    .bottom-block {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #00a3d8;
+        height: 100px;
+        .friend {
+            position: absolute;
+            bottom: 11px;
+            right: 10px;
+            height: 75px;
+            width: 75px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// --------------------------------------------------------------------------------
+/* hovers for desktop  only */
+// --------------------------------------------------------------------------------
+.no-touchevents .something {
+    &:hover {
+    }
+}
+
+// --------------------------------------------------------------------------------
+// media queries
+// --------------------------------------------------------------------------------
+
+@media (max-width: 1800px) {
+    .splash-container {
+        .mid-block {
+            .nav-wrap {
+                .nav-item {
+                    width: 190px;
+                    .item-title {
+                        font-size: 50px;
+                    }
+                    .item-caption {
+                        font-size: 35px;
+                    }
+                }
+            }
+            .logo-wrap {
+                bottom: 60px;
+                .logo {
+                    width: 550px;
+                }
+            }
+        }
+
+        .bottom-block {
+            .friend {
+            }
+        }
+        .top-block {
+            .stars {
+                transform: scale(0.8);
+                transform-origin: top right;
+            }
+            .stars-mini {
+                transform: scale(0.6);
+                transform-origin: top right;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .splash-container {
+        .mid-block {
+            .nav-wrap {
+                padding-right: 22px;
+                .nav-item {
+                    width: 145px;
+                    border-left-width: 5px;
+                    .item-title {
+                        font-size: 40px;
+                    }
+                    .item-caption {
+                        font-size: 28px;
+                    }
+                }
+            }
+            .logo-wrap {
+                bottom: 62px;
+                .logo {
+                    width: 400px;
+                }
+            }
+        }
+
+        .bottom-block {
+            .friend {
+            }
+        }
+        .top-block {
+            .stars {
+                transform: scale(0.7);
+                transform-origin: top right;
+            }
+            .stars-mini {
+                transform: scale(0.6);
+                transform-origin: top right;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .splash-container {
+        .top-block {
+        }
+
+        .mid-block {
+            .nav-wrap {
+            }
+            .logo-wrap {
+            }
+        }
+
+        .bottom-block {
+            .friend {
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .splash-container {
+        .top-block {
+            .stars {
+                display: none;
+            }
+            .stars-mini {
+                display: block;
+            }
+        }
+
+        .mid-block {
+            .nav-wrap {
+                flex-direction: column;
+                justify-content: center;
+                z-index: 5000;
+                .nav-item {
+                    margin: 15px 0 15px 55px;
+                }
+            }
+            .logo-wrap {
+                bottom: unset;
+                position: fixed;
+                top: 50px;
+                .logo {
+                    width: 240px;
+                }
+            }
+        }
+
+        .bottom-block {
+            .friend {
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .splash-container {
+        .mid-block {
+            bottom: 40px;
+            .nav-wrap {
+                padding: 8px 0;
+                .nav-item {
+                    margin: 8px 0 8px 20px;
+                }
+            }
+            .logo-wrap {
+                left: 22px;
+                .logo {
+                    width: 190px;
+                }
+            }
+        }
+
+        .bottom-block {
+            height: 40px;
+            .friend {
+                height: 32px;
+                width: 32px;
+                bottom: 5px;
+            }
+        }
+    }
+}

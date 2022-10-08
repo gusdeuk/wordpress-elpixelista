@@ -1,0 +1,13 @@
+/* This file should only include imports of other scss files */
+
+/* globar vars */
+@import "global-variables";
+
+/* plugins y librerias */
+@import "../bootstrap/css-nwrk/bootstrap";
+@import "animate-css/animate";
+@import "../fonts/font-awesome/font-awesome.css";
+
+/* gus css */
+@import "x-main-plugins";
+@import "x-main-base";

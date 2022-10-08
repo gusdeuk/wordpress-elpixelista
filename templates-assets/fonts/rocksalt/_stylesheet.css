@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'rocksalt';
+    src: url('../fonts/rocksalt/rocksalt-webfont.eot');
+    src: url('../fonts/rocksalt/rocksalt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rocksalt/rocksalt-webfont.woff2') format('woff2'),
+         url('../fonts/rocksalt/rocksalt-webfont.woff') format('woff'),
+         url('../fonts/rocksalt/rocksalt-webfont.ttf') format('truetype'),
+         url('../fonts/rocksalt/rocksalt-webfont.svg#rock_saltregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}

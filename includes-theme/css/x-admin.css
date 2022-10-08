@@ -1,0 +1,5 @@
+#adminmenu .wp-menu-image img { opacity: 0.8; }
+.fixed .column-slug,
+.fixed .column-tags { width: auto!important;}
+.fixed .column-author, .fixed .column-date, .fixed .column-format, .fixed .column-links, .fixed .column-parent, .fixed .column-posts { width: auto!important;}
+

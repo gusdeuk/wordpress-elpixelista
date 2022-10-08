@@ -1,0 +1,250 @@
+/* POST SINGLE CSS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* VIEW STYLES */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.head-top-title {
+    padding: 25px 0;
+    border-bottom: solid #7bdffe 4px;
+}
+
+.top-head-blocks {
+}
+.top-head-blocks .text-block-1 {
+    font-size: 55px;
+    font-family: "FattenLight", sans-serif;
+    font-weight: 400;
+    color: #9cc74c;
+    margin-bottom: 5px;
+}
+.top-head-blocks .text-block-2 {
+    font-size: 26px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.top-head-blocks .right-text-image {
+    margin-bottom: 30px;
+}
+.top-bulletted-blocks {
+    font-size: 22px;
+    font-weight: 100;
+    color: #fff;
+}
+.top-bulletted-blocks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.top-bulletted-blocks ul li {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    line-height: 1.35;
+}
+
+.top-bulletted-blocks ul li:before {
+    font-size: 15px;
+    font-family: "FontAwesome";
+    content: "\f054\00a0";
+    margin: 0 0 0 -12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.top-bulletted-blocks ul li:last-child {
+    margin-bottom: 0;
+}
+.top-bulletted-blocks .bulleted-text-a {
+    background-color: #23477f;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.top-bulletted-blocks .bulleted-text-b {
+    background-color: #2aa3d8;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.top-bulletted-blocks .bulleted-text-c {
+    background-color: #9cc74c;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.top-final-blocks {
+}
+.top-final-blocks .text-block-3 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.related-carousel {
+    padding-bottom: 10px;
+}
+.bottom-carousel-title,
+.related-carousel-title {
+    padding: 15px;
+}
+.bottom-carousel-title h1,
+.related-carousel-title h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.bottom-text-block {
+    font-size: 22px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.bottom-open-popup {
+    margin: 30px 0;
+    font-size: 17px !important;
+    &::before {
+        content: "View full screen gallery";
+    }
+}
+
+.owl-carousel {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: calc(100% + 15px);
+
+    .item.clickable {
+        border-bottom: solid 10px #fff;
+        transition: all 0.6s;
+        &:hover {
+            filter: brightness(1.05);
+            border-bottom: solid 10px #9cc74c;
+        }
+    }
+}
+.project-zoom-info {
+    margin-bottom: 30px;
+}
+.project-related {
+    margin-bottom: 40px;
+}
+
+.img-wide {
+    margin: 0;
+}
+
+@media (max-width: 1500px) {
+    .top-head-blocks .text-block-1 {
+        font-size: 48px;
+    }
+    .top-head-blocks .text-block-2 {
+        font-size: 20px;
+    }
+    .top-final-blocks .text-block-3 {
+        font-size: 16px;
+    }
+    .top-bulletted-blocks {
+        font-size: 19px;
+    }
+    .top-bulletted-blocks ul li:before {
+        font-size: 13px;
+    }
+    .bottom-text-block {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .top-head-blocks .text-block-1 {
+        font-size: 40px;
+    }
+    .top-head-blocks .text-block-2 {
+        font-size: 18px;
+    }
+    .top-final-blocks .text-block-3 {
+        font-size: 15px;
+    }
+    .top-bulletted-blocks {
+        font-size: 17px;
+    }
+    .top-bulletted-blocks ul li:before {
+        font-size: 13px;
+    }
+    .bottom-text-block {
+        font-size: 19px;
+    }
+    .top-wide-image {
+    }
+    .bottom-open-popup {
+        font-size: 14px !important;
+        &::before {
+            content: "Screen Gallery";
+        }
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* ANIMATED MODAL WORKS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.modal-works-main-wrapper {
+    position: relative;
+}
+.modal-works-closebt {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.modal-works-closebt:hover {
+    transform: rotate(90deg);
+}
+#modal-works-closebt-container {
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    top: 10px;
+    right: 30px;
+}
+
+#modal-works-content-container {
+    /* position: absolute; z-index: 4; */
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+
+    background: url(../../images/loader-circ.gif) no-repeat 50% 50%;
+}
+#modal-works-big-image {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+@media (max-width: 1400px) {
+	#modal-works-closebt-container {
+		height: 71px;
+		right: 14px;
+		left: 0;
+		text-align: center;
+		background-color: #00000045;
+		top: 0;
+		padding-top: 8px;
+	}
+	#modal-works-big-image {
+		margin-top: 71px;
+	}
+	.touchevents #modal-works-closebt-container{
+		right: 0;
+	}
+
+}
+
+@media (max-width: 800px) {
+	#modal-works-closebt-container {
+		height: 45px;
+		padding-top: 4px;
+		img {
+			width: 35px;
+			height: 35px;
+		}
+	}
+	#modal-works-big-image {
+		margin-top: 45px;
+	}
+}
